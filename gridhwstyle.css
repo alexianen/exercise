@@ -1,0 +1,122 @@
+body {
+    padding-top: 20px;
+}
+
+.parent {
+    display: grid;
+    border: 7px solid #6d6464;
+    padding: 100px;
+    gap: 10px;
+    width: 1100px;
+    grid-template-areas: 
+    'one one one one one two three four five five'
+    'one one one one one six seven seven eight eight'
+    'one one one one one six seven seven nine nine'
+    'one one one one one ten seven seven nine nine'
+    'eleven eleven eleven twelve twelve twelve twelve twelve thirteen thirteen'
+    'eleven eleven eleven twelve twelve twelve twelve twelve thirteen thirteen'
+    'eleven eleven eleven twelve twelve twelve twelve twelve thirteen thirteen'    
+    ;    
+}
+
+.child {
+    padding: 0;
+    color: #fff;
+    font-size: 30px;
+   
+}
+
+.child img {
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    
+    text-align: center;
+    color: black;
+    position: relative;
+    top: -100px;
+}
+
+.child img:hover {
+    opacity: 0.3;
+    background-color: black;  
+    transition: all 0.25s ease;
+}
+
+.one img:hover .text  {
+    visibility: visible;
+  
+}
+
+
+.one[data-tooltip]:hover {
+    content: attr(data-tooltip);
+    background-color: white;
+    color: black;
+    z-index: 10;
+    top: 25px;
+}
+
+
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.ten {
+    grid-area: ten;
+}
+
+.eleven {
+    grid-area: eleven;
+}
+
+.twelve {
+    grid-area: twelve;
+}
+
+.thirteen {
+    grid-area: thirteen;
+}
+
+.fourteen {
+    grid-area: fourteen;
+}
+
+.fifteen {
+    grid-area: fifteen;
+}
